@@ -1,3 +1,7 @@
+* {
+    font-family: 'Heebo', sans-serif;
+}
+
 body {
     background-image: url('../src/day.jpg');
 }
@@ -11,29 +15,63 @@ body {
 #content {
     display: flexbox;
     width: 40%;
-    background-color: rgba(255, 255, 255, 0.486);
+    min-width: 300px;
     margin: auto;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     border: rgba(128, 128, 128, 0.397) solid 1px;
+}
+
+.day {
+    background-color: rgba(255, 255, 255, 0.486);
+    color: black;
+}
+
+.night {
+    background-color: rgb(43 45 60 / 54%);
+    color: white;
 }
 
 #search {
     margin-right: 10px;
 }
 
+#temp {
+    font-size: 6em;
+}
+
+#desc {
+    font-size: 2em;
+}
+
+#city {
+    font-size: 1em;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
 input {
     border: rgba(128, 128, 128, 0.397) solid 1px;
-    padding: 5px;
+    padding: 7.5px;
     width: 20%;
     height: 1.5em;
-    border-radius: 15px;
+    border-radius: 20px;
+    font-size: 1em;
 }
 
 button {
     border: rgba(128, 128, 128, 0.397) solid 1px;
     background-color: rgb(160, 160, 160);
+    font-size: 1em;
     padding: 5px;
     width: 15%;
     border-radius: 15px;
+    min-width: 150px;
+}
+
+input:focus {
+    outline-style: none;
 }

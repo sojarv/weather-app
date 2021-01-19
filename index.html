@@ -2,6 +2,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap" rel="stylesheet">
     <link href='style/style.css' rel='stylesheet'>
     <title>Good weather</title>
 </head>
@@ -15,22 +17,19 @@
 
     </div>
 
-    <div id='content'>
-        <div id='city'>
-            <div id='name'>
-                London
-            </div>
-            <div id='country'>
-                GB
-            </div>
-        </div>
+    <div id='content' class=''>
         <div id='weather'>
-            <div id='temp' class='temperature'>15 °C</div>
-            <div id='desc' class='description'>Clouds</div>
-
-
+            <div id='temp' class='info'></div>
+            <div id='desc' class='info'></div>
         </div>
+        <div id='city'>
+            <div id='name' class='info'>
 
+            </div>
+            <div id='country' class='info'>
+
+            </div>
+        </div>
     </div>
 
     <script src='dist/main.js'></script>

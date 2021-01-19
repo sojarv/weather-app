@@ -1,7 +1,10 @@
-import { resolve } from 'path';
+const path = require('path');
 
-export const entry = './js/index.js';
-export const output = {
-    filename: 'main.js',
-    path: resolve(__dirname, 'dist'),
+module.exports = {
+    mode: 'none',
+    entry: './js/index.js',
+    output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist'),
+    },
 };
